@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   String selectedRole = 'visitante';
   bool isLogin = true;
 
-    Future<void> login() async {
+      Future<void> login() async {
     try {
       // Verificar credenciales en la tabla perfiles
       final response = await supabase
@@ -31,8 +31,15 @@ class _LoginPageState extends State<LoginPage> {
           SnackBar(content: Text('Bienvenido, ${response['role']}')),
         );
         
-        // Navegar a TurismoPage después del login exitoso
-        Navigator.pushReplacementNamed(context, '/turismo');
+        // Navegar a TurismoPage pasando el rol del usuario y el email
+        Navigator.pushReplacementNamed(
+          context, 
+          '/turismo',
+          arguments: {
+            'userRole': response['role'],
+            'userEmail': response['email'],
+          },
+        );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Credenciales incorrectas o rol no válido')),

@@ -6,8 +6,8 @@ import 'turismo_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: 'https://uldotvctssursxcxoqlt.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVsZG90dmN0c3N1cnN4Y3hvcWx0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyOTcyMDQsImV4cCI6MjA2Mzg3MzIwNH0.Ie9YLPfnqZsnIfZqi9Ywieji5BcMtVphboGDJ7rGfRM',
+    url: 'https://sodlregonixbebwnvdxf.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNvZGxyZWdvbml4YmVid252ZHhmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyOTcyNTgsImV4cCI6MjA2Mzg3MzI1OH0.eyan4TXu8A1vo5YkedqofqvgC_NvmEkkgbBIXHGndak',
   );
 
   runApp(const MyApp());
