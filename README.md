@@ -2,6 +2,12 @@
 
 Una aplicación móvil completa para gestión de lugares turísticos desarrollada en Flutter con Supabase como backend.
 
+## Descargar APK
+
+Puedes descargar la APK desde el siguiente enlace:
+
+[Descargar guía.apk](https://www.mediafire.com/file/e8wdc2nx3b7lpth/guia.apk/file)
+
 ## 📱 Descripción
 
 Sistema de turismo que permite a los usuarios registrarse con diferentes roles (Visitante/Publicador) para visualizar y gestionar lugares turísticos. Los publicadores pueden agregar nuevos lugares con imágenes, ubicación GPS y descripciones, mientras que los visitantes pueden explorar estos lugares y ver comentarios.
